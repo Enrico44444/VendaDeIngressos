@@ -1,0 +1,66 @@
+:root {
+  --tomato: #b3392b;
+  --tomato-dark: #8e2b1f;
+  --tomato-light: #d95d4b;
+  --bg-light: #fff6f3;
+  --text-dark: #2c2c2c;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(to right, var(--tomato), var(--tomato-dark));
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  color: white;
+  background-color: var(--tomato-dark);
+  text-decoration: none;
+  padding: 12px 20px;
+  margin: 0 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  display: inline-block;
+}
+
+nav a:hover {
+  background-color: var(--tomato);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+main h2 {
+  color: var(--tomato-dark);
+  margin-bottom: 16px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #666;
+}

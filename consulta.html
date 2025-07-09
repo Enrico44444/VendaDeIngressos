@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Consulta de Compradores</title>
+  <link rel="stylesheet" href="styleconsulta.css" />
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+</head>
+<body>
+  <script>
+    const senha = prompt("Digite a senha de administrador:");
+    if (senha !== "admin123") {
+      alert("Senha incorreta!");
+      window.location.href = "index.html";
+    }
+  </script>
+
+  <header>
+    <h1>Consulta de Compradores</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="compra.html">Compra</a>
+      <a href="cadastro.html">Cadastro</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Ingressos Cadastrados e Compradores</h2>
+    <div id="ingressos-container"></div>
+  </main>
+
+  <script src="firebase-config.js"></script>
+  <script src="consulta.js"></script>
+</body>
+</html>

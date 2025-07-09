@@ -1,0 +1,157 @@
+:root {
+  --tomato: #b3392b;
+  --tomato-dark: #8e2b1f;
+  --tomato-light: #d95d4b;
+  --bg-light: #fff6f3;
+  --text-dark: #2c2c2c;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+}
+
+header {
+  background: linear-gradient(to right, var(--tomato), var(--tomato-dark));
+  color: white;
+  padding: 24px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 26px;
+  margin: 0;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: opacity 0.3s;
+}
+
+nav a:hover {
+  opacity: 0.8;
+}
+
+main {
+  padding: 40px 60px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 40px;
+  color: var(--tomato-dark);
+  font-size: 24px;
+}
+
+.compradores-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  text-align: left;
+}
+
+.coluna {
+  flex: 1;
+  min-width: 260px;
+  background-color: white;
+  border-radius: 16px;
+  padding: 20px 24px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  border: 1px solid #ddd;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+.coluna:hover{
+  background-color: #fff6f3;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.coluna h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--tomato-dark);
+  font-size: 20px;
+}
+
+.comprador {
+  margin-bottom: 16px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+#ingressos-container {
+  max-width: 1000px;
+  margin: 60px auto 20px auto;
+  padding: 0 20px;
+}
+
+/* Cartão de ingresso */
+.ingresso {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-left: 8px solid var(--tomato);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  padding: 24px 30px;
+  margin-bottom: 40px;
+  text-align: left;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.ingresso:hover {
+  background-color: #fff6f3;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.ingresso h3 {
+  color: var(--tomato-dark);
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 22px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 6px;
+}
+
+.ingresso p {
+  margin: 6px 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.compradores-lista {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px dashed #ccc;
+}
+
+.compradores-lista h4 {
+  margin-bottom: 12px;
+  font-size: 17px;
+  color: var(--tomato);
+}
+
+.comprador {
+  background-color: #fff6f3;
+  border: 1px solid var(--tomato-light);
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 1.6;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.comprador strong {
+  color: var(--tomato-dark);
+}
+

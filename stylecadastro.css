@@ -1,0 +1,136 @@
+:root {
+  --tomato: #b3392b;
+  --tomato-dark: #8e2b1f;
+  --tomato-light: #d95d4b;
+  --bg-light: #fff6f3;
+  --text-dark: #2c2c2c;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+}
+
+header {
+  background: linear-gradient(to right, var(--tomato), var(--tomato-dark));
+  color: white;
+  padding: 24px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 26px;
+  margin: 0;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: opacity 0.3s;
+}
+
+nav a:hover {
+  opacity: 0.8;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.form-section {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  background: white;
+  border-radius: 16px;
+  padding: 40px 30px; /* Aumentado para deixar o conteúdo mais "centralizado" */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+
+.form-section label {
+  display: block;
+  margin: 16px 0 4px;
+  font-weight: bold;
+}
+
+.form-section input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid #888;
+  margin-bottom: 16px; /* espaço entre campos */
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+
+button#btnCadastrar {
+  padding: 12px 24px;
+  background-color: var(--tomato-dark);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button#btnCadastrar:hover {
+  background-color: var(--tomato);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.lista-section {
+  flex: 1;
+  min-width: 300px;
+}
+
+.lista-section h3 {
+  margin-bottom: 20px;
+  color: var(--tomato-dark);
+}
+
+#listaIngressos {
+  list-style: none;
+  padding: 0;
+}
+
+#listaIngressos li {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.ingresso-info {
+  margin-bottom: 6px;
+}
+
+.btn-excluir {
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 6px 14px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: box-shadow 0.3s, background-color 0.3s;
+}
+
+.btn-excluir:hover {
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+background-color: var(--tomato-dark);;
+}
